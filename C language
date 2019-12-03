@@ -1,0 +1,37 @@
+#include<stdio.h>
+#include<math.h>
+#include<time.h>
+
+int main()
+{
+    //header
+    time_t t = time(NULL);
+    struct tm tm = *localtime(&t);
+    printf("\tSubject Name: C-Programming\n");
+    printf("\tStudent Name: TANN TAN\n");
+    printf("\tID:           45\n");
+    printf("\tDate:%d/%d/%d", tm.tm_mday,tm.tm_mon,tm.tm_year);
+    //endheader
+    int x;
+    char Code;
+    float a,b;
+    printf("\n\t\t===========================================\n");
+    printf("\n\t\t=     WELCOME TO C PROGRAMMING LANGUAGE   =\n");
+    printf("\n\t\t===========================================\n");
+    //Body
+    x=470;
+    Code='D';
+    a=3.58627;
+    int y = 250;
+    b=a;
+    char ch = 'k';
+    float S;
+    int sum;
+    printf(
+           "\n\tAssign Variable int X =%d,\n\tChar Code ='%c' \n\tfloat a = %f\n\tBut b=a \n\tS = a+b = %f\n\tSum = x+y = %d"
+           ,x,Code,a,a+b,x+y
+           );
+
+    getchar();
+    return 0;
+}
